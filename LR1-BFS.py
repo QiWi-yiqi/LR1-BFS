@@ -1,15 +1,15 @@
 import streamlit as st
 st.image("LabReport_BSD2513_#1.jpg", caption="Breadth-First Search Graph", use_column_width=True)
 
-graph = {
+raph = {
     'A': ['B', 'D'],
     'B': ['C', 'E', 'G'],
     'C': ['A'],
     'D': ['C'],
     'E': ['H'],
     'F': [],
-    'G': ['F', 'H'],
-    'H': ['F']
+    'G': ['F'],
+    'H': ['G','F']
 }
 
 def bfs(graph, start_node):
@@ -42,5 +42,6 @@ if st.button("Run BFS"):
         st.error("Start node not found in graph.")
 
 st.caption("Lab Report BSD2513 | BFS Traversal Demonstration")
+
 
 
