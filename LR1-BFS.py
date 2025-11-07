@@ -9,7 +9,7 @@ graph = {
     'E': ['H'],
     'F': [],
     'G': ['F'],
-    'H': ['G','F']
+    'H': ['F','G']
 }
 
 def bfs(graph, start_node):
@@ -42,6 +42,7 @@ if st.button("Run BFS"):
         st.error("Start node not found in graph.")
 
 st.caption("Lab Report BSD2513 | BFS Traversal Demonstration")
+
 
 
 
